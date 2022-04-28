@@ -48,7 +48,6 @@ body{
     height: 80vh;
 }
 .square-video{
-    flex-grow: 1;
     width: 150px;
     height: 100px;
     position: relative;
@@ -66,8 +65,9 @@ body{
     background-color: rgb(37, 37, 37);
 }
 .col-first{
-    flex-grow: 2;
-    max-width: 175px;
+    height: 60px;
+    width: 183px;
+    min-width: 183px;
 }
 
 .icon{
@@ -87,10 +87,12 @@ body{
     top: 10px;
 }
 .col-central{
-    flex-grow: 5;
+    width: 880px;
+    height: 70px;
     display: flex;
     padding: 20px;
-    
+    min-width: 880px;
+    max-width: 1200px;
 }
 .microphone-col{
     flex-grow: 1;
@@ -110,10 +112,10 @@ body{
     color: white;
 }
 .col-end{
-    flex-grow: 1;
     position: relative;
     background-color: grey;
-    max-width: 170px;
+    width: 140px;
+    height: 70px;
 }
 .end-meeting{
     position: absolute;
@@ -134,4 +136,7 @@ body{
     margin-right: 10px;
     width: 60px;
     height: 60px;
+}
+.color-green{
+    color: rgb(20, 185, 20);
 }
